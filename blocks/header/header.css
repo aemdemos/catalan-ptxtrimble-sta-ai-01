@@ -1,26 +1,28 @@
 
 .header-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--background-color);
+  width: 100%;
 }
 
 .header-wrapper .nav-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 2;
-  max-width: 1264px;
-  padding: 0 32px;
+  width: 100%;
 }
 
 header {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-height);
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
 }
 
 header nav {
@@ -30,108 +32,124 @@ header nav {
   width: 100%;
 }
 
-header nav .nav-brand {
-  display: flex;
-  align-items: center;
+header nav .nav-hamburger {
+  display: none;
+  visibility: hidden;
 }
 
-header nav .nav-brand img {
-  height: 40px;
+header .nav-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  flex-shrink: 0;
+}
+
+header .nav-brand img {
+  height: 50px; /* Adjust height as needed */
   object-fit: contain;
 }
 
-header nav .nav-sections {
+header .nav-sections {
   display: flex;
+  align-items: center;
   flex: 1;
   justify-content: center;
-  align-items: center;
 }
 
-header nav .nav-sections ul {
+header .nav-sections ul {
   display: flex;
   gap: 24px;
   list-style: none;
   padding-left: 0;
   margin: 0;
+  font-size: var(--body-font-size-s);
 }
 
-header nav .nav-sections li {
-  display: flex;
-  align-items: center;
+header .nav-sections ul > li {
   font-weight: 500;
   position: relative;
 }
 
-header nav .nav-tools picture {
-  margin: 0 10px;
-}
-
-header nav .nav-sections li picture {
-  margin-left: 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-header nav .nav-tools {
-  display: flex;
-  align-items: center;
-}
-
-header nav .nav-tools .default-content-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row; /* Ensure row direction for nested elements */
-}
-
-header nav .nav-tools .default-content-wrapper picture,
-header nav .nav-tools .default-content-wrapper p {
-  margin: 0 10px;
-  position: relative;
-}
-
-header nav .nav-tools .default-content-wrapper p::after {
+header .nav-sections ul > li::after {
   content: '|';
   position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: -12px;
+  top: 0;
+  bottom: 0;
+  color: #ccc; /* Adjust color as needed */
 }
 
-header nav .nav-tools .default-content-wrapper p:last-child::after {
+header .nav-sections ul > li:last-child::after {
   content: '';
 }
 
-header nav .nav-tools .default-content-wrapper p.language {
+header .nav-sections ul > li a {
+  color: inherit; /* Ensure all links have the same color */
+  text-decoration: none;
+}
+
+header .nav-sections ul > li a:hover {
+  color: var(--link-hover-color); /* Add hover effect for consistency */
+}
+
+header .nav-tools {
   display: flex;
   align-items: center;
+  margin-left: 40px;
+  flex-shrink: 0;
 }
 
-header nav .nav-tools .default-content-wrapper p.language::before {
-  content: '';
-  display: inline-block;
-  margin-right: 5px;
-  background: url('/path/to/globe-icon.png') no-repeat center center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
+header .nav-tools picture, header .nav-tools p {
+  margin: 0 10px;
 }
 
-header nav .nav-tools .default-content-wrapper p.user-account {
-  display: flex;
-  align-items: center;
+header .nav-tools .divider {
+  height: 24px;
+  width: 1px;
+  background-color: #ccc; /* Adjust color as needed */
+  margin: 0 10px;
 }
 
-header nav .nav-tools .default-content-wrapper p.user-account::before {
-  content: '';
-  display: inline-block;
-  margin-right: 5px;
-  background: url('/path/to/user-icon.png') no-repeat center center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
+header .nav-tools picture img {
+  width: 24px;
+  height: auto;
 }
 
-header nav .nav-hamburger {
-  display: none;
-  visibility: hidden;
+@media (width >= 900px) {
+  header nav {
+    padding: 0 32px;
+  }
+
+  header .nav-hamburger {
+    display: none;
+  }
+
+  header .nav-sections {
+    display: flex;
+  }
+
+  header nav .nav-sections .nav-drop {
+    padding-right: 16px;
+    cursor: pointer;
+  }
+
+  header nav .nav-sections .nav-drop::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.5em;
+    right: 2px;
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
+  }
+
+  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
+    top: unset;
+    bottom: 0.5em;
+    transform: rotate(315deg);
+  }
 }
