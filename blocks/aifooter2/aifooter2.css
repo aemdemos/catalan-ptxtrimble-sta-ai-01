@@ -1,0 +1,42 @@
+
+.aifooter2-wrapper .aifooter2-4-cols > div {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text color */
+    padding: 40px 50px; /* Increase padding for better spacing */
+    flex-direction: row; /* Ensure columns are side by side */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols > div > div {
+    flex: 1;
+    margin: 0 20px; /* Adjust margin between columns */
+    display: flex;
+    flex-direction: column; /* Ensure list items are stacked */
+    align-items: flex-start; /* Align items to the start for better spacing */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0; /* Reset margin to ensure alignment */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols ul li:first-child {
+    font-size: 1.4em; /* Slightly increase font size for titles */
+    font-weight: bold; /* Make titles bold */
+    margin-bottom: 25px; /* Increase margin below titles */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols ul li {
+    margin-bottom: 15px; /* Increase margin between list items */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols a {
+    color: #fff; /* Light text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.aifooter2-wrapper .aifooter2-4-cols a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

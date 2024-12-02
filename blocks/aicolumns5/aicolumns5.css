@@ -1,0 +1,88 @@
+
+.aicolumns5-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-color);
+  padding: 20px;
+}
+
+.aicolumns5 {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.aicolumns5 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aicolumns5 > div > div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.aicolumns5 > div > div:first-child {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aicolumns5 > div > div:first-child > * {
+  margin: 0 0 10px 0; /* Reduce margin for all elements in the first column */
+}
+
+.aicolumns5 > div > div:last-child {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aicolumns5 img {
+  width: auto;
+  max-width: 168px;
+  height: auto;
+  margin-bottom: 10px; /* Adjust space below image */
+}
+
+.aicolumns5 p {
+  margin: 5px 0; /* Adjust margin for paragraphs */
+}
+
+.aicolumns5 .button-container {
+  margin-bottom: 5px; /* Adjust margin between button containers */
+}
+
+.aicolumns5 .button-container a {
+  text-decoration: underline;
+  color: var(--link-color);
+  font-weight: normal;
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.aicolumns5 .button-container a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .aicolumns5 > div {
+    flex-direction: column;
+  }
+
+  .aicolumns5 > div > div {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .aicolumns5 .button-container {
+    margin-bottom: 5px;
+  }
+}

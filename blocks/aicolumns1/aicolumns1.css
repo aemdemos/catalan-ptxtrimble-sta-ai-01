@@ -1,0 +1,66 @@
+
+.aicolumns1-wrapper > .aicolumns1 {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the two columns */
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+.aicolumns1-wrapper > .aicolumns1 > div {
+  display: flex;
+  flex: 1; /* Ensures both divs take equal space */
+  flex-direction: row; /* Aligns items side-by-side */
+}
+
+.aicolumns1-wrapper > .aicolumns1 > div > div:first-child {
+  margin-right: 20px; /* Adds spacing between the text and image sections */
+}
+
+.aicolumns1-wrapper > .aicolumns1 h3 {
+  font-size: 1.5em; /* Adjusts the font size for the title */
+  font-weight: bold; /* Makes the title bold */
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+.aicolumns1-wrapper > .aicolumns1 p {
+  font-size: 1em; /* Sets the font size for paragraphs */
+  line-height: 1.5; /* Adjusts the line height for better readability */
+}
+
+.aicolumns1-wrapper > .aicolumns1 img {
+  max-width: 100%; /* Ensures images scale within their container */
+  height: auto; /* Maintains the aspect ratio of images */
+}
+
+/* Specific styling for the play button to position it correctly */
+.aicolumns1-wrapper > .aicolumns1 > div > div:nth-child(2) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aicolumns1-wrapper > .aicolumns1 > div > div:nth-child(2) > p:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; /* Removes margin from play button container */
+  pointer-events: none; /* Ensures the play button is non-interactive */
+}
+
+@media (min-width: 900px) {
+  .aicolumns1-wrapper > .aicolumns1 {
+    flex-direction: row; /* Ensures row-based layout for wider screens */
+  }
+
+  .aicolumns1-wrapper > .aicolumns1 > div {
+    align-items: flex-start; /* Aligns items at the top */
+    flex-direction: row; /* Ensures row-based layout */
+    gap: 20px; /* Adjusts gap between columns */
+  }
+
+  .aicolumns1-wrapper > .aicolumns1 > div > div {
+    flex: 1; /* Ensures equal space for child divs */
+    order: unset; /* Removes order property */
+  }
+}
