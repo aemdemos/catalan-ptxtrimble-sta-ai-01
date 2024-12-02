@@ -30,7 +30,7 @@
 }
 
 .aicolumns5 > div > div:first-child > * {
-  margin: 0 0 10px 0; /* Reduce margin for all elements in the first column */
+  margin: 0 0 10px; /* Reduce margin for all elements in the first column */
 }
 
 .aicolumns5 > div > div:last-child {
@@ -72,7 +72,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .aicolumns5 > div {
     flex-direction: column;
   }

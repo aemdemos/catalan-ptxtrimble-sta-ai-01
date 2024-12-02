@@ -22,14 +22,14 @@
     margin: 0; /* Reset margin to ensure alignment */
 }
 
+.aifooter2-wrapper .aifooter2-4-cols ul li {
+    margin-bottom: 15px; /* Increase margin between list items */
+}
+
 .aifooter2-wrapper .aifooter2-4-cols ul li:first-child {
     font-size: 1.4em; /* Slightly increase font size for titles */
     font-weight: bold; /* Make titles bold */
     margin-bottom: 25px; /* Increase margin below titles */
-}
-
-.aifooter2-wrapper .aifooter2-4-cols ul li {
-    margin-bottom: 15px; /* Increase margin between list items */
 }
 
 .aifooter2-wrapper .aifooter2-4-cols a {

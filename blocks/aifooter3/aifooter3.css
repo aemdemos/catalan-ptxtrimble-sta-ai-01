@@ -2,7 +2,7 @@
 .aifooter3-wrapper {
   background-color: #2d2d2d; /* Set the background color */
   padding: 20px;
-  color: #ffffff; /* Set the text color to white */
+  color: #fff; /* Set the text color to white */
 }
 
 .aifooter3 {
@@ -55,7 +55,7 @@
 }
 
 .aifooter3 ul li a {
-  color: #ffffff; /* Ensure links are white */
+  color: #fff; /* Ensure links are white */
   text-decoration: none; /* Remove underline from links */
 }
 

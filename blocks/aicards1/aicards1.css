@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   padding: 0;
   box-sizing: border-box;
   min-height: 400px; /* Ensure consistent card height */

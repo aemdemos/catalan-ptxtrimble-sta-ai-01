@@ -32,7 +32,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #003366; /* Dark blue color for the arrow */
+    border-top: 10px solid #036; /* Dark blue color for the arrow */
     position: absolute;
     bottom: -8px; /* Adjusted positioning of the arrow */
     left: 50%;
@@ -41,7 +41,7 @@
 
 .aicolumns4 > div > div p {
     margin: 0;
-    color: #003366; /* Dark blue color for the text */
+    color: #036; /* Dark blue color for the text */
     font-weight: bold;
     line-height: 1.5; /* Adjust line height for better alignment */
 }

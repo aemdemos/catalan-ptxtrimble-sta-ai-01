@@ -48,7 +48,7 @@
   pointer-events: none; /* Ensures the play button is non-interactive */
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .aicolumns1-wrapper > .aicolumns1 {
     flex-direction: row; /* Ensures row-based layout for wider screens */
   }
