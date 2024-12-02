@@ -1,0 +1,47 @@
+
+.aicolumns4-wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.aicolumns4 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #d3d3d3; /* Light gray horizontal line */
+    padding-bottom: 10px; /* Space for the horizontal line */
+}
+
+.aicolumns4 > div > div {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Ensure content is side by side */
+    align-items: center;
+    justify-content: center;
+}
+
+.aicolumns4 > div > div:first-child::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #036; /* Dark blue color for the arrow */
+    position: absolute;
+    bottom: -8px; /* Adjusted positioning of the arrow */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aicolumns4 > div > div p {
+    margin: 0;
+    color: #036; /* Dark blue color for the text */
+    font-weight: bold;
+    line-height: 1.5; /* Adjust line height for better alignment */
+}

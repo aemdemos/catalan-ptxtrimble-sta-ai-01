@@ -23,7 +23,7 @@
               },
               "color": "rgb(148, 0, 211)",
               "mapping": "header",
-              "customBlockName": ""
+              "customBlockName": "header"
             }
           ],
           "settings": {}
@@ -293,7 +293,7 @@
               ],
               "color": "rgba(75, 0, 130, 0.4)",
               "mapping": "columns",
-              "customBlockName": "aicolumns1"
+              "customBlockName": "aicolumns5"
             }
           ],
           "settings": {}
@@ -320,7 +320,7 @@
               },
               "color": "rgba(0, 0, 255, 0.4)",
               "mapping": "defaultContent",
-              "customBlockName": ""
+              "customBlockName": "aifooter1"
             },
             {
               "id": "box-id--324117499",
@@ -353,7 +353,7 @@
               ],
               "color": "rgba(0, 0, 255, 0.4)",
               "mapping": "columns",
-              "customBlockName": "aicolumns2"
+              "customBlockName": "aifooter2"
             },
             {
               "id": "box-id-140389030",
@@ -368,7 +368,7 @@
               },
               "color": "rgba(0, 0, 255, 0.4)",
               "mapping": "defaultContent",
-              "customBlockName": ""
+              "customBlockName": "aifooter1"
             },
             {
               "id": "box-id--709122431",
@@ -397,7 +397,7 @@
               ],
               "color": "rgb(0, 255, 0)",
               "mapping": "columns",
-              "customBlockName": "aicolumns3"
+              "customBlockName": "aifooter3"
             }
           ],
           "settings": {}

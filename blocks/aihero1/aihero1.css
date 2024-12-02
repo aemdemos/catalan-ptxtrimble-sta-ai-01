@@ -1,0 +1,71 @@
+
+.aihero1-container > .aihero1-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  min-height: 400px; /* Adjust height to fit the content */
+  background-image: url('./media_1ce0dfac76e865325ecf24d4b224777fee0ceb533.png?width=2000&format=webply&optimize=medium');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 picture {
+  display: none;
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px; /* Constrain the width to avoid text running too long */
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 h1 {
+  margin: 0 0 10px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 p {
+  margin: 10px 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 .button-container {
+  margin-top: 20px;
+}
+
+.aihero1-container > .aihero1-wrapper > .block.aihero1 .button-container .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: none; /* Ensure no shadow for the button text */
+}
+
+@media (width >= 900px) {
+  .aihero1-container > .aihero1-wrapper > .block.aihero1 > div {
+    padding: 40px 32px;
+  }
+}

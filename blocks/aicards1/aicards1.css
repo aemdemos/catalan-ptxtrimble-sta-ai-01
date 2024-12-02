@@ -1,0 +1,72 @@
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 ul li {
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 400px; /* Ensure consistent card height */
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .aicards1-card-image {
+  width: 100%;
+  line-height: 0;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .aicards1-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .aicards1-card-body h4 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .aicards1-card-body p {
+  margin: 0 0 10px;
+  flex-grow: 1;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .button-container {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.aicards1-container > .aicards1-wrapper > .block.aicards1 .button:hover {
+  background-color: #0056b3;
+}

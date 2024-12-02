@@ -1,0 +1,49 @@
+
+.aifooter1-container > .aifooter1-wrapper {
+  background-color: #2c2c2c; /* Dark background color */
+  max-width: unset;
+  padding: 0;
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the sections */
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between title-description pairs */
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block .button-container {
+  display: flex;
+  flex-direction: row; /* Title and arrow icon side by side */
+  align-items: center;
+  gap: 5px; /* Space between title and arrow icon */
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block .button-container a.button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none; /* Remove button background */
+  padding: 0; /* Remove button padding */
+  border: none; /* Remove button border */
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block .button-container a.button::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block > div > p:nth-child(odd) {
+  display: flex;
+  flex-direction: row; /* Ensure titles and icons are side by side */
+  align-items: center;
+}
+
+.aifooter1-container > .aifooter1-wrapper > .aifooter1.block > div > p:nth-child(even) {
+  margin-left: 20px; /* Indent descriptions */
+}
